@@ -29,3 +29,14 @@ D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\obj\Debug\net7.0\ref
 D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\obj\Debug\net7.0\MusicSchool.pdb
 D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\obj\Debug\net7.0\MusicSchool.genruntimeconfig.cache
 D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\obj\Debug\net7.0\ref\MusicSchool.dll
+D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\bin\Debug\net7.0\Dapper.dll
+D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\bin\Debug\net7.0\System.Data.SqlClient.dll
+D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\obj\Debug\net7.0\MusicSchool.csproj.AssemblyReference.cache
+D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\obj\Debug\net7.0\MusicSchool.csproj.CopyComplete
+D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\bin\Debug\net7.0\BCrypt.Net-Next.dll
+D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\bin\Debug\net7.0\System.Security.Permissions.dll
