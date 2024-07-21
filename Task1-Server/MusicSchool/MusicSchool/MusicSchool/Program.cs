@@ -14,6 +14,7 @@ builder.Services.AddScoped<IDbConnection>(sp =>
 builder.Services.AddScoped<SubjectRepository>();
 builder.Services.AddScoped<GradeRepository>();
 builder.Services.AddScoped<UserRepository>();
+builder.Services.AddScoped<StudentRepository>();
 builder.Services.AddAuthorization();
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

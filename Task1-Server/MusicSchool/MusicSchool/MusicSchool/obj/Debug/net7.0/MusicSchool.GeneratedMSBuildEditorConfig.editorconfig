@@ -34,6 +34,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Grades/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Grades/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Grades/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Grades/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +60,38 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Students/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Students/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Students/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Students/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Subjects/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Subjects/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Subjects/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Subjects/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/_ViewImports.cshtml]

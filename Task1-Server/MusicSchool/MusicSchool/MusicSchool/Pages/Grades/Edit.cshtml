@@ -1,0 +1,42 @@
+﻿@page
+@model MusicSchool.Pages.Grades.EditModel
+@{
+    ViewData["Title"] = "Edit Grade";
+}
+
+<h1>Edit Grade</h1>
+
+<form method="post">
+    <div class="form-group" hidden>
+        <label asp-for="Grade.GradeId" class="control-label"></label>
+        <input asp-for="Grade.GradeId" class="form-control" />
+        <span asp-validation-for="Grade.GradeId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Grade.StudentId" class="control-label"></label>
+        <select asp-for="Grade.StudentId" class="form-control" asp-items="Model.Students"></select>
+        <span asp-validation-for="Grade.StudentId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Grade.SubjectId" class="control-label"></label>
+        <select asp-for="Grade.SubjectId" class="form-control" asp-items="Model.Subjects"></select>
+        <span asp-validation-for="Grade.SubjectId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Grade.GradeValue" class="control-label"></label>
+        <input asp-for="Grade.GradeValue" class="form-control" />
+        <span asp-validation-for="Grade.GradeValue" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Grade.DateTime" class="control-label"></label>
+        <input asp-for="Grade.DateTime" class="form-control" />
+        <span asp-validation-for="Grade.DateTime" class="text-danger"></span>
+    </div>
+    <div class="form-group" style="margin: 5px 0px;">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>

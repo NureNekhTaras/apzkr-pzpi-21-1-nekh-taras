@@ -27,13 +27,13 @@ namespace MusicSchool.Data
 
         public async Task AddStudentAsync(Student student)
         {
-            var sql = "INSERT INTO Students (Name, Age, Class) VALUES (@Name, @Age, @Class)";
+            var sql = "INSERT INTO Students (StudentName, Class) VALUES (@StudentName, @Class)";
             await _dbConnection.ExecuteAsync(sql, student);
         }
 
         public async Task UpdateStudentAsync(Student student)
         {
-            var sql = "UPDATE Students SET Name = @Name, Age = @Age, Class = @Class WHERE StudentId = @StudentId";
+            var sql = "UPDATE Students SET StudentName = @StudentName, Class = @Class WHERE StudentId = @StudentId";
             await _dbConnection.ExecuteAsync(sql, student);
         }
 

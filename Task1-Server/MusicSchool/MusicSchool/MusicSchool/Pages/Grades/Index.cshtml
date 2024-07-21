@@ -1,0 +1,38 @@
+﻿@page
+@model MusicSchool.Pages.Grades.IndexModel
+@{
+    ViewData["Title"] = "Grades";
+}
+
+<h1>Grades</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Add New Grade</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Subject</th>
+            <th>Grade</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var grade in Model.Grades)
+        {
+            <tr>
+                <td>@grade.Student.StudentName</td>
+                <td>@grade.Subject.SubjectName</td>
+                <td>@grade.GradeValue</td>
+                <td>@grade.DateTime.ToString("yyyy-MM-dd")</td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@grade.GradeId" class="btn btn-secondary">Edit</a>
+                    <a asp-page="Delete" asp-route-id="@grade.GradeId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
