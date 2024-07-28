@@ -3,8 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using MusicSchool.Data;
 using MusicSchool.Models;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace MusicSchool.Pages.Grades
+namespace MusicSchool.Pages.Statistics
 {
     public class IndexModel : PageModel
     {
@@ -26,18 +29,24 @@ namespace MusicSchool.Pages.Grades
         public int? SubjectId { get; set; }
 
         [BindProperty(SupportsGet = true)]
-        public DateTime? Date { get; set; }
+        public DateTime? StartDate { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public DateTime? EndDate { get; set; }
 
         public SelectList Students { get; set; }
         public SelectList Subjects { get; set; }
-        public IEnumerable<Grade> Grades { get; set; }
+        public IEnumerable<StudentStatistic> Statistics { get; set; }
 
         public async Task OnGetAsync()
         {
-            Students = new SelectList(await _studentRepository.GetStudentsAsync(), "StudentId", "StudentName");
-            Subjects = new SelectList(await _subjectRepository.GetSubjectsAsync(), "SubjectId", "SubjectName");
+            var students = await _studentRepository.GetStudentsAsync();
+            var subjects = await _subjectRepository.GetSubjectsAsync();
 
-            Grades = await _gradeRepository.GetGradesAsync(StudentId, SubjectId, Date);
+            Students = new SelectList(students, "StudentId", "StudentName");
+            Subjects = new SelectList(subjects, "SubjectId", "SubjectName");
+
+            Statistics = await _gradeRepository.GetStudentStatisticsAsync(StudentId, SubjectId, StartDate, EndDate);
         }
     }
 }

@@ -14,11 +14,21 @@ namespace MusicSchool.Pages.Subjects
             _subjectRepository = subjectRepository;
         }
 
-        public IList<Subject> Subjects { get; private set; }
+        [BindProperty(SupportsGet = true)]
+        public string SubjectName { get; set; }
+
+        public IEnumerable<Subject> Subjects { get; set; }
 
         public async Task OnGetAsync()
         {
-            Subjects = (await _subjectRepository.GetSubjectsAsync()).ToList();
+            if (!string.IsNullOrWhiteSpace(SubjectName))
+            {
+                Subjects = await _subjectRepository.GetSubjectsByNameAsync(SubjectName);
+            }
+            else
+            {
+                Subjects = await _subjectRepository.GetSubjectsAsync();
+            }
         }
     }
 }

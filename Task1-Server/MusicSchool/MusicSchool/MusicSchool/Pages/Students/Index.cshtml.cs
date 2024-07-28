@@ -14,11 +14,21 @@ namespace MusicSchool.Pages.Students
             _studentRepository = studentRepository;
         }
 
-        public IList<Student> Students { get; private set; }
+        [BindProperty(SupportsGet = true)]
+        public string SearchText { get; set; }
+
+        public IEnumerable<Student> Students { get; set; }
 
         public async Task OnGetAsync()
         {
-            Students = (await _studentRepository.GetStudentsAsync()).ToList();
+            if (!string.IsNullOrWhiteSpace(SearchText))
+            {
+                Students = await _studentRepository.GetStudentsBySearchTextAsync(SearchText);
+            }
+            else
+            {
+                Students = await _studentRepository.GetStudentsAsync();
+            }
         }
     }
 }

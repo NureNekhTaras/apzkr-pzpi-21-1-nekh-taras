@@ -46,3 +46,77 @@ button.accept-policy[b-k94co2rahd] {
   white-space: nowrap;
   line-height: 60px;
 }
+
+
+/* site.css */
+
+/* General Styles */
+body[b-k94co2rahd] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.jumbotron[b-k94co2rahd] {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+    .jumbotron h1[b-k94co2rahd] {
+        font-size: 2.5rem;
+        color: #343a40;
+    }
+
+    .jumbotron p[b-k94co2rahd] {
+        font-size: 1.2rem;
+        color: #6c757d;
+    }
+
+.card[b-k94co2rahd] {
+    margin: 1rem 0;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title[b-k94co2rahd] {
+    font-size: 1.5rem;
+    color: #343a40;
+}
+
+.card-body svg[b-k94co2rahd] {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    fill: #007bff;
+}
+
+.card-body .btn[b-k94co2rahd] {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+    .card-body .btn:hover[b-k94co2rahd] {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+.container[b-k94co2rahd] {
+    padding: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .jumbotron h1[b-k94co2rahd] {
+        font-size: 2rem;
+    }
+
+    .jumbotron p[b-k94co2rahd] {
+        font-size: 1rem;
+    }
+
+    .card-body svg[b-k94co2rahd] {
+        width: 2rem;
+        height: 2rem;
+    }
+}

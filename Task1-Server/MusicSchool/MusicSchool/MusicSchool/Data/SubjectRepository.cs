@@ -19,6 +19,12 @@ namespace MusicSchool.Data
             return await _dbConnection.QueryAsync<Subject>(sql);
         }
 
+        public async Task<IEnumerable<Subject>> GetSubjectsByNameAsync(string subjectName)
+        {
+            var sql = "SELECT SubjectId, SubjectName, Description FROM Subjects WHERE SubjectName LIKE @SubjectName";
+            return await _dbConnection.QueryAsync<Subject>(sql, new { SubjectName = $"%{subjectName}%" });
+        }
+
         public async Task<Subject> GetSubjectByIdAsync(int id)
         {
             var sql = "SELECT * FROM Subjects WHERE SubjectId = @Id";

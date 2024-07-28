@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[4.0.3, )"
             },
+            "Chart.js": {
+              "target": "Package",
+              "version": "[3.7.1, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.1.35, )"

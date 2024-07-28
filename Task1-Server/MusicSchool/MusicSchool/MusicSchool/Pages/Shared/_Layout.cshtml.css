@@ -46,3 +46,77 @@ button.accept-policy {
   white-space: nowrap;
   line-height: 60px;
 }
+
+
+/* site.css */
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+    .jumbotron h1 {
+        font-size: 2.5rem;
+        color: #343a40;
+    }
+
+    .jumbotron p {
+        font-size: 1.2rem;
+        color: #6c757d;
+    }
+
+.card {
+    margin: 1rem 0;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #343a40;
+}
+
+.card-body svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    fill: #007bff;
+}
+
+.card-body .btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+    .card-body .btn:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+.container {
+    padding: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 2rem;
+    }
+
+    .jumbotron p {
+        font-size: 1rem;
+    }
+
+    .card-body svg {
+        width: 2rem;
+        height: 2rem;
+    }
+}

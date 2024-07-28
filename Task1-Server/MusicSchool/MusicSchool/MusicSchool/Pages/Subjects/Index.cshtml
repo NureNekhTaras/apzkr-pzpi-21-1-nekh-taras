@@ -10,6 +10,15 @@
     <a asp-page="Create" class="btn btn-primary">Add New Subject</a>
 </p>
 
+<form method="get">
+    <div class="form-group">
+        <label asp-for="SubjectName" class="control-label"></label>
+        <input asp-for="SubjectName" class="form-control" />
+        <input type="submit" value="Filter" style="margin: 5px 0px;" class="btn btn-primary" />
+        <a asp-page="Index" style="margin: 5px 0px;" class="btn btn-secondary">Clear</a>
+    </div>
+</form>
+
 <table class="table">
     <thead>
         <tr>

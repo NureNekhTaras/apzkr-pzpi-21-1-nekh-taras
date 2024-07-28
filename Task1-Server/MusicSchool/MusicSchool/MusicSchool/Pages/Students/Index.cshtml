@@ -10,6 +10,15 @@
     <a asp-page="Create" class="btn btn-primary">Add New Student</a>
 </p>
 
+<form method="get">
+    <div class="form-group">
+        <label asp-for="SearchText" class="control-label"></label>
+        <input asp-for="SearchText" class="form-control" placeholder="Search by Name or Class" />
+        <input type="submit" value="Filter" style="margin: 5px 0px;" class="btn btn-primary" />
+        <a asp-page="Index" class="btn btn-secondary" style="margin: 5px 0px;">Clear</a>
+    </div>
+</form>
+
 <table class="table">
     <thead>
         <tr>

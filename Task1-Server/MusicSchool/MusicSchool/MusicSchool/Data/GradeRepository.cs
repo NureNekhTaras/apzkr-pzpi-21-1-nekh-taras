@@ -13,6 +13,51 @@ namespace MusicSchool.Data
             _dbConnection = dbConnection;
         }
 
+        public async Task<IEnumerable<Grade>> GetGradesAsync(int? studentId, int? subjectId, DateTime? date)
+        {
+            var sql = @"
+                SELECT g.GradeId, g.StudentId, g.SubjectId, g.GradeValue, g.DateTime, 
+                       s.StudentId, s.StudentName AS StudentName, 
+                       sub.SubjectId, sub.SubjectName AS SubjectName
+                FROM Grades g
+                JOIN Students s ON g.StudentId = s.StudentId
+                JOIN Subjects sub ON g.SubjectId = sub.SubjectId
+                WHERE (@StudentId IS NULL OR g.StudentId = @StudentId)
+                  AND (@SubjectId IS NULL OR g.SubjectId = @SubjectId)
+                  AND (@Date IS NULL OR CONVERT(date, g.DateTime) = @Date)";
+
+            return await _dbConnection.QueryAsync<Grade, Student, Subject, Grade>(
+                sql,
+                (grade, student, subject) =>
+                {
+                    grade.Student = student;
+                    grade.Subject = subject;
+                    return grade;
+                },
+                new { StudentId = studentId, SubjectId = subjectId, Date = date },
+                splitOn: "StudentId,SubjectId");
+        }
+
+        public async Task<IEnumerable<StudentStatistic>> GetStudentStatisticsAsync(int? studentId, int? subjectId, DateTime? startDate, DateTime? endDate)
+        {
+            var sql = @"
+                SELECT s.StudentId, s.StudentName AS StudentName, 
+                       sub.SubjectId, sub.SubjectName AS SubjectName,
+                       AVG(g.GradeValue) AS AverageGrade
+                FROM Grades g
+                JOIN Students s ON g.StudentId = s.StudentId
+                JOIN Subjects sub ON g.SubjectId = sub.SubjectId
+                WHERE (@StudentId IS NULL OR g.StudentId = @StudentId)
+                  AND (@SubjectId IS NULL OR g.SubjectId = @SubjectId)
+                  AND (@StartDate IS NULL OR g.DateTime >= @StartDate)
+                  AND (@EndDate IS NULL OR g.DateTime <= @EndDate)
+                GROUP BY s.StudentId, s.StudentName, sub.SubjectId, sub.SubjectName";
+
+            return await _dbConnection.QueryAsync<StudentStatistic>(
+                sql,
+                new { StudentId = studentId, SubjectId = subjectId, StartDate = startDate, EndDate = endDate });
+        }
+
         public async Task<IEnumerable<Grade>> GetGradesAsync()
         {
             var sql = @"

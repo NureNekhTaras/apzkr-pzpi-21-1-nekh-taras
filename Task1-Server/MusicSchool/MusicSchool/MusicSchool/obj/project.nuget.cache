@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "B9gk5HmNoOCntC3lU3ZNis676vDJaFOk8c+qYHvk983759dG3eqbp6cn6HNVxHx/E2oTHq2EYGzjR7YEniB9tg==",
+  "dgSpecHash": "vfcAxyqgnOhNwbf2hve5hALdRU4P1DuwjBRhwwqKzcBNdf4aOVb8mlDE2Z9EEDpKkIaw7uyxzbx/PwGz+gxAOQ==",
   "success": true,
   "projectFilePath": "D:\\work\\SC\\Task1-Server\\MusicSchool\\MusicSchool\\MusicSchool\\MusicSchool.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taras\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\taras\\.nuget\\packages\\chart.js\\3.7.1\\chart.js.3.7.1.nupkg.sha512",
     "C:\\Users\\taras\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\taras\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\taras\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
