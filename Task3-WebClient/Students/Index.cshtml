@@ -1,0 +1,43 @@
+﻿@page
+@model MusicSchool.Pages.Students.IndexModel
+@{
+    ViewData["Title"] = "Students";
+}
+
+<h1>Students</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Add New Student</a>
+</p>
+
+<form method="get">
+    <div class="form-group">
+        <label asp-for="SearchText" class="control-label"></label>
+        <input asp-for="SearchText" class="form-control" placeholder="Search by Name or Class" />
+        <input type="submit" value="Filter" style="margin: 5px 0px;" class="btn btn-primary" />
+        <a asp-page="Index" class="btn btn-secondary" style="margin: 5px 0px;">Clear</a>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Students)
+        {
+            <tr>
+                <td>@student.StudentName</td>
+                <td>@student.Class</td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@student.StudentId" class="btn btn-secondary">Edit</a>
+                    <a asp-page="Delete" asp-route-id="@student.StudentId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,43 @@
+﻿@page
+@model MusicSchool.Pages.Subjects.IndexModel
+@{
+    ViewData["Title"] = "Subjects";
+}
+
+<h1>Subjects</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Add New Subject</a>
+</p>
+
+<form method="get">
+    <div class="form-group">
+        <label asp-for="SubjectName" class="control-label"></label>
+        <input asp-for="SubjectName" class="form-control" />
+        <input type="submit" value="Filter" style="margin: 5px 0px;" class="btn btn-primary" />
+        <a asp-page="Index" style="margin: 5px 0px;" class="btn btn-secondary">Clear</a>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var subject in Model.Subjects)
+        {
+            <tr>
+                <td>@subject.SubjectName</td>
+                <td>@subject.Description</td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@subject.SubjectId" class="btn btn-secondary">Edit</a>
+                    <a asp-page="Delete" asp-route-id="@subject.SubjectId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

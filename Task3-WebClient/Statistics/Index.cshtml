@@ -1,0 +1,113 @@
+﻿@page
+@model MusicSchool.Pages.Statistics.IndexModel
+@{
+    ViewData["Title"] = "Student Statistics";
+}
+
+<h1>Student Statistics</h1>
+
+<form method="get">
+    <div class="form-group">
+        <label asp-for="StudentId" class="control-label"></label>
+        <select asp-for="StudentId" class="form-control" asp-items="Model.Students">
+            <option value="">All Students</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="SubjectId" class="control-label"></label>
+        <select asp-for="SubjectId" class="form-control" asp-items="Model.Subjects">
+            <option value="">All Subjects</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="StartDate" class="control-label"></label>
+        <input asp-for="StartDate" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label asp-for="EndDate" class="control-label"></label>
+        <input asp-for="EndDate" class="form-control" type="date" />
+    </div>
+    <input type="submit" value="Filter" class="btn btn-primary" style="margin: 5px 0px;" />
+    <a asp-page="Index" class="btn btn-secondary" style="margin: 5px 0px;">Clear</a>
+</form>
+
+<button id="toggleView" class="btn btn-info" style="margin: 0px 0px;">Switch to Diagram View</button>
+
+<div id="tableView">
+    @if (Model.Statistics != null && Model.Statistics.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Subject Name</th>
+                    <th>Average Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Statistics)
+                {
+                    <tr>
+                        <td>@item.StudentName</td>
+                        <td>@item.SubjectName</td>
+                        <td>@item.AverageGrade</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No statistics found.</p>
+    }
+</div>
+
+<div id="chartView" style="display:none;">
+    <canvas id="myChart"></canvas>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('toggleView').addEventListener('click', function () {
+            var tableView = document.getElementById('tableView');
+            var chartView = document.getElementById('chartView');
+            if (tableView.style.display === 'none') {
+                tableView.style.display = 'block';
+                chartView.style.display = 'none';
+                this.textContent = 'Switch to Diagram View';
+            } else {
+                tableView.style.display = 'none';
+                chartView.style.display = 'block';
+                this.textContent = 'Switch to Table View';
+
+                // Initialize chart if not already done
+                if (!window.chartInitialized) {
+                    var ctx = document.getElementById('myChart').getContext('2d');
+                    var chartData = {
+                        labels: @Html.Raw(Json.Serialize(Model.Statistics.Select(s => $"{s.StudentName} - {s.SubjectName}"))),
+                        datasets: [{
+                            label: 'Average Grade',
+                            data: @Html.Raw(Json.Serialize(Model.Statistics.Select(s => s.AverageGrade))),
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    };
+
+                    var myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: chartData,
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                    window.chartInitialized = true;
+                }
+            }
+        });
+    </script>
+}
