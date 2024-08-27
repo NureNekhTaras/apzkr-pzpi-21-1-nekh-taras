@@ -9,103 +9,103 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MusicSchool
 build_property.RootNamespace = MusicSchool
-build_property.ProjectDir = D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool\
+build_property.ProjectDir = D:\work\MusicSchool\Task1-Server\MusicSchool\MusicSchool\MusicSchool\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\work\SC\Task1-Server\MusicSchool\MusicSchool\MusicSchool
+build_property.MSBuildProjectDirectory = D:\work\MusicSchool\Task1-Server\MusicSchool\MusicSchool\MusicSchool
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Account/Login.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Account/Logout.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Account/Register.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Error.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Grades/Create.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Grades/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Grades/Delete.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Grades/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Grades/Edit.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Grades/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Grades/Index.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Grades/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Index.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Privacy.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Statistics/Index.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Statistics/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGlzdGljc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Students/Create.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Students/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Students/Delete.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Students/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Students/Edit.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Students/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Students/Index.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Students/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Subjects/Create.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Subjects/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Subjects/Delete.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Subjects/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Subjects/Edit.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Subjects/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Subjects/Index.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Subjects/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/_ViewImports.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/_ViewStart.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/work/SC/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Shared/_Layout.cshtml]
+[D:/work/MusicSchool/Task1-Server/MusicSchool/MusicSchool/MusicSchool/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-k94co2rahd

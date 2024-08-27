@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j572yWMiwbE=",
+  "dgSpecHash": "OpcAvDaF0wM=",
   "success": true,
-  "projectFilePath": "D:\\work\\SC\\Task1-Server\\MusicSchool\\MusicSchool\\MusicSchool\\MusicSchool.csproj",
+  "projectFilePath": "D:\\work\\MusicSchool\\Task1-Server\\MusicSchool\\MusicSchool\\MusicSchool\\MusicSchool.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taras\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\taras\\.nuget\\packages\\chart.js\\3.7.1\\chart.js.3.7.1.nupkg.sha512",
